@@ -19,11 +19,11 @@
         <maven.compiler.target>1.8</maven.compiler.target>
 
         <!-- 统一各个框架版本 -->
-        <struts.version>2.5.10</struts.version>
-        <spring.version>5.1.14.RELEASE</spring.version>
-        <hibernate.version>5.1.7.Final</hibernate.version>
-        <jackson.version>2.9.8</jackson.version>
-        <log4j2.version>2.6.2</log4j2.version>
+        <struts.version>6.0.0</struts.version>
+        <spring.version>5.3.24</spring.version>
+        <hibernate.version>5.3.20.Final</hibernate.version>
+        <jackson.version>2.14.0</jackson.version>
+        <log4j2.version>2.19.0</log4j2.version>
     </properties>
 
     <dependencies>
@@ -78,44 +78,44 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.19</version>
+            <version>8.0.28</version>
         </dependency>
         <!-- C3P0 依赖 -->
         <dependency>
             <groupId>com.mchange</groupId>
             <artifactId>c3p0</artifactId>
-            <version>0.9.5</version>
+            <version>0.9.5.5</version>
         </dependency>
         <!-- AspectJ依赖 -->
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
-            <version>1.8.10</version>
+            <version>1.9.9.1</version>
         </dependency>
         <!-- SLF4J依赖 -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
-            <version>1.7.25</version>
+            <version>2.0.4</version>
         </dependency>
 
         <!-- json -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.3</version>
+            <version>1.2.83</version>
         </dependency>
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
-            <version>${jackson.version}</version>
+            <version>2.14.0</version>
         </dependency>
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>${jackson.version}</version>
+            <version>2.14.0</version>
         </dependency>
 
         <dependency>
@@ -137,18 +137,18 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>3.0.1</version>
+            <version>4.0.1</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>
-            <version>2.1</version>
+            <version>2.2</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

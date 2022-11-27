@@ -6,6 +6,7 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import edu.fzu.tmall.dao.*;
 import edu.fzu.tmall.util.Page;
+
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -46,7 +47,7 @@ public abstract class BaseBackServlet extends HttpServlet {
             Page page = new Page(start, count);
 
 
-            String method = (String) request.getAttribute("method"); //假设method = list，Servlet = CategoryServlet
+            String method = (String) request.getAttribute("method"); // 假设method = list，Servlet = CategoryServlet
             /**
              * 借助反射，调用对应的方法利用反射，调用对应业务类的方法，注意此处的 this 并不是指本类的对象，
              * 而是具体的业务类，如 CategoryServlet 对象，为什么呢？
@@ -63,7 +64,7 @@ public abstract class BaseBackServlet extends HttpServlet {
             else if (redirect.startsWith("%"))
                 response.getWriter().print(redirect.substring(1)); // 输出字符串
             else
-                request.getRequestDispatcher(redirect).forward(request, response); //服务端跳转
+                request.getRequestDispatcher(redirect).forward(request, response); // 服务端跳转
 
         } catch (Exception e) {
             // TODO Auto-generated catch block

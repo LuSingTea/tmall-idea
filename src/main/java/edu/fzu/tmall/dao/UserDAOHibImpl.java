@@ -2,7 +2,7 @@ package edu.fzu.tmall.dao;
 
 import java.util.List;
 
-import org.hibernate.Query;
+import org.hibernate.query.Query;
 import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 
@@ -50,7 +50,7 @@ public class UserDAOHibImpl implements UserDAO {
 	public void delete(int id) {
 		// TODO Auto-generated method stub
 		Session session=HibernateUtil.getSession();
-	    session.beginTransaction(); 
+	    session.beginTransaction();
 	    //开启事务
 	    User user=(User)session.get(User.class, id);
 	    session.delete(user);//执行完user变成 持久化状态                  //执行数据库添加操作

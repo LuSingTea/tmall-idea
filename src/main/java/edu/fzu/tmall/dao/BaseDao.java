@@ -17,10 +17,7 @@ import java.util.Map;
  */
 /**
  * 插入
- * 
- * @param object
- *            需保存对象
- * @return 影响行数
+ *
  */
 public interface BaseDao<T> {
 	 Session getCurrentSession();
@@ -104,11 +101,11 @@ public interface BaseDao<T> {
 	/**
 	 *
 	 * @功能: TODO(这里简要描述这个方法的作用)
-	 * 
+	 *
 	 * @param： 参数说明
-	 * 
+	 *
 	 * @return Serializable：返回值说明
-	 * 
+	 *
 	 * @throws
 	 */
 	public Serializable save(final T object);
@@ -593,7 +590,7 @@ public interface BaseDao<T> {
 	 */
 	public <T> List<T> findEntityBySQL(final String sql, final Class<T> clas, final Integer startRow,
                                        final Integer pageSize);
-	
+
 	/*
 	 *直接执行sql语句
 	 */

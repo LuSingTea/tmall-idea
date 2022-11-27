@@ -2,8 +2,6 @@ package edu.fzu.tmall.service;
 
 import edu.fzu.tmall.dao.UserDAO;
 import edu.fzu.tmall.pojo.User;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

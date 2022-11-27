@@ -31,13 +31,13 @@ public class ProductController {
 
     @RequestMapping("/listProduct")
     public String listProduct(@RequestParam(required = false) Page page,
-                       Model model) {
+                              Model model) {
         if (page == null) {
-            page = new Page(0,10);
+            page = new Page(0, 10);
         }
         int total = productService.total();
         page.setTotal(total);
-        List<Product> products= productService.listByPage(page);
+        List<Product> products = productService.listByPage(page);
         model.addAttribute("products", products);
         return "admin/product/listProduct";
     }
@@ -51,7 +51,7 @@ public class ProductController {
         Page page = new Page(start, 10);
         int total = productService.total();
         page.setTotal(total);
-        List<Product> products= productService.listByPage(page);
+        List<Product> products = productService.listByPage(page);
         for (Product product : products) {
             System.out.println(product);
         }
