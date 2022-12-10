@@ -20,7 +20,7 @@
 
         <!-- 统一各个框架版本 -->
         <struts.version>6.0.0</struts.version>
-        <spring.version>5.3.24</spring.version>
+        <spring.version>6.0.0</spring.version>
         <hibernate.version>5.3.20.Final</hibernate.version>
         <jackson.version>2.14.0</jackson.version>
         <log4j2.version>2.19.0</log4j2.version>
